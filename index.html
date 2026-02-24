@@ -1,14 +1,30 @@
-<!doctype html>
-<html lang="en">
+
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프리미엄 로또 번호 생성기</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+    <div class="container">
+        <header>
+            <h1>Lotto Number Generator</h1>
+        </header>
+
+        <main>
+            <div class="controls-container">
+                <label for="sets-input">생성할 세트 수:</label>
+                <input type="number" id="sets-input" value="5" min="1" max="10">
+            </div>
+
+            <button id="generate-btn">행운의 번호 생성</button>
+
+            <div class="numbers-display" id="numbers-display"></div>
+        </main>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
