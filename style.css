@@ -58,6 +58,30 @@ body[data-theme="light"] {
     transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+.site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.site-nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.site-nav a:hover {
+    transform: translateY(-1px);
+    border-color: var(--primary-glow-color);
+    box-shadow: 0 0 10px var(--primary-glow-shadow);
+}
+
 .header-row {
     display: flex;
     align-items: center;
@@ -152,6 +176,52 @@ header h1 {
     margin-top: 30px;
     display: grid;
     gap: 20px;
+}
+
+.content-section {
+    margin-top: 28px;
+    text-align: left;
+}
+
+.content-section h2 {
+    margin: 0 0 12px;
+    font-size: 1.4rem;
+    color: var(--primary-glow-color);
+    text-shadow: 0 0 10px var(--primary-glow-shadow);
+}
+
+.content-section p {
+    margin: 0 0 12px;
+    color: var(--light-text-color);
+    line-height: 1.6;
+}
+
+.simple-list {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 0;
+    color: var(--light-text-color);
+    display: grid;
+    gap: 6px;
+}
+
+.faq-item {
+    background: var(--background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+}
+
+.faq-item h3 {
+    margin: 0 0 8px;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.faq-item p {
+    margin: 0;
+    color: var(--light-text-color);
 }
 
 .partner-section {
@@ -330,6 +400,17 @@ header h1 {
     color: var(--ball-text-color);
     font-size: 1.3rem;
     box-shadow: inset 0 2px 4px rgba(0,0,0,0.4), 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.site-footer {
+    margin-top: 30px;
+    padding-top: 18px;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+    color: var(--light-text-color);
+    font-size: 0.9rem;
+    display: grid;
+    gap: 6px;
 }
 
 @media (max-width: 480px) {

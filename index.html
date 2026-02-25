@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>프리미엄 로또 번호 생성기</title>
+    <meta name="description" content="로또 번호를 랜덤으로 생성하고, 확률·분포에 대한 가이드를 제공하는 가벼운 툴과 콘텐츠를 제공합니다.">
+    <link rel="canonical" href="https://product-builder-test1-ejz.pages.dev/">
     <link rel="stylesheet" href="style.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4418515560410325"
         crossorigin="anonymous"></script>
@@ -12,22 +14,63 @@
 </head>
 <body>
     <div class="container">
+        <nav class="site-nav" aria-label="주요 메뉴">
+            <a href="#generator">번호 생성</a>
+            <a href="#guide">이용 가이드</a>
+            <a href="#faq">FAQ</a>
+            <a href="animal-test-동물상-테스트/index.html">동물상 테스트</a>
+            <a href="about.html">소개</a>
+            <a href="privacy.html">개인정보</a>
+            <a href="terms.html">이용약관</a>
+        </nav>
+
         <header class="header-row">
-            <h1>Lotto Number Generator</h1>
+            <h1>프리미엄 로또 번호 생성기</h1>
             <button id="theme-toggle" class="theme-toggle" type="button" aria-live="polite">
                 Light Mode
             </button>
         </header>
 
         <main>
-            <div class="controls-container">
-                <label for="sets-input">생성할 세트 수:</label>
-                <input type="number" id="sets-input" value="5" min="1" max="10">
-            </div>
+            <section id="generator" class="content-section">
+                <h2>번호 생성 도구</h2>
+                <p>로또 번호를 무작위로 생성하는 도구입니다. 통계적으로 공정한 난수 추출을 사용하며, 예측이나 당첨 보장을 제공하지 않습니다.</p>
+                <div class="controls-container">
+                    <label for="sets-input">생성할 세트 수:</label>
+                    <input type="number" id="sets-input" value="5" min="1" max="10">
+                </div>
 
-            <button id="generate-btn">행운의 번호 생성</button>
+                <button id="generate-btn">행운의 번호 생성</button>
 
-            <div class="numbers-display" id="numbers-display"></div>
+                <div class="numbers-display" id="numbers-display"></div>
+            </section>
+
+            <section id="guide" class="content-section">
+                <h2>이용 가이드</h2>
+                <p>이 사이트는 간단한 무작위 번호 생성과 로또 관련 상식, 사용 가이드를 제공하는 정보성 페이지입니다.</p>
+                <p>도구 사용 후 생성된 번호를 비교하거나 저장하고, 자신의 구매 전략을 정리하는 데 활용할 수 있습니다.</p>
+                <ul class="simple-list">
+                    <li>무작위 생성은 예측이나 확률 향상을 의미하지 않습니다.</li>
+                    <li>복권 구매는 본인의 판단과 책임 하에 진행하세요.</li>
+                    <li>서비스는 무료로 제공되며, 문의는 제휴 폼을 통해 접수됩니다.</li>
+                </ul>
+            </section>
+
+            <section id="faq" class="content-section">
+                <h2>자주 묻는 질문</h2>
+                <div class="faq-item">
+                    <h3>번호 생성 방식은 무엇인가요?</h3>
+                    <p>정해진 범위 내에서 균등 분포 난수를 사용해 번호를 생성합니다.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>당첨 확률이 올라가나요?</h3>
+                    <p>아니요. 모든 번호는 동일한 확률을 가지며, 이 도구는 재미와 참고용입니다.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>개인정보는 수집하나요?</h3>
+                    <p>제휴 문의를 제외한 일반 이용에서는 개인정보를 수집하지 않습니다.</p>
+                </div>
+            </section>
 
             <section class="partner-section" aria-labelledby="partner-title">
                 <h2 id="partner-title">제휴 문의</h2>
@@ -120,6 +163,12 @@
                 <a class="partner-submit" href="animal-test-동물상-테스트/index.html">동물상 테스트 바로가기</a>
             </section>
         </main>
+
+        <footer class="site-footer">
+            <p>콘텐츠와 서비스는 정보 제공 목적이며, 당첨 보장 또는 확률 향상을 약속하지 않습니다.</p>
+            <p>문의: 제휴 문의 폼을 통해 연락 부탁드립니다.</p>
+            <p>© 2026 Premium Lotto Generator</p>
+        </footer>
     </div>
 
     <script src="main.js"></script>
