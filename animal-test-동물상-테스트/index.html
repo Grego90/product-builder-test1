@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동물상 테스트</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <header class="hero">
+            <div>
+                <p class="eyebrow">Teachable Machine Image Model</p>
+                <h1>동물상 테스트</h1>
+                <p class="sub">웹캠으로 촬영하거나 사진을 업로드하면 고양이상인지 강아지상인지 판단합니다.</p>
+            </div>
+            <a class="back-link" href="../index.html">메인으로 돌아가기</a>
+        </header>
+
+        <main class="panel">
+            <section class="capture">
+                <div class="orb" aria-live="polite">
+                    <div id="webcam-container" class="webcam-slot">
+                        <div class="placeholder">웹캠 미리보기</div>
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <button type="button" id="start-btn">웹캠 시작</button>
+                    <button type="button" id="stop-btn" disabled>웹캠 중지</button>
+                    <label class="upload">
+                        사진 업로드
+                        <input type="file" id="image-upload" accept="image/*">
+                    </label>
+                </div>
+            </section>
+
+            <section class="result">
+                <h2>분석 결과</h2>
+                <div id="label-container" class="labels"></div>
+                <div id="status" class="status">모델을 로딩한 뒤 웹캠 또는 사진을 사용하세요.</div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
