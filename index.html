@@ -25,6 +25,71 @@
             <button id="generate-btn">행운의 번호 생성</button>
 
             <div class="numbers-display" id="numbers-display"></div>
+
+            <section class="partner-section" aria-labelledby="partner-title">
+                <h2 id="partner-title">제휴 문의</h2>
+                <p class="partner-note">아래 폼으로 제휴 문의를 보내주시면 빠르게 답변드리겠습니다.</p>
+                <form class="partner-form" action="https://formspree.io/f/xkovkqnd" method="POST">
+                    <div class="form-row">
+                        <label for="company">회사명</label>
+                        <input id="company" name="company" type="text" placeholder="회사명을 입력해주세요" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="name">담당자명</label>
+                        <input id="name" name="name" type="text" placeholder="담당자명을 입력해주세요" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">이메일</label>
+                        <input id="email" name="email" type="email" placeholder="contact@example.com" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="phone">연락처</label>
+                        <input id="phone" name="phone" type="tel" placeholder="010-0000-0000">
+                    </div>
+                    <div class="form-row">
+                        <label for="company-size">회사 규모</label>
+                        <select id="company-size" name="company_size" required>
+                            <option value="" selected disabled>선택해주세요</option>
+                            <option value="1-10">1-10명</option>
+                            <option value="11-50">11-50명</option>
+                            <option value="51-200">51-200명</option>
+                            <option value="201-1000">201-1000명</option>
+                            <option value="1000+">1000명 이상</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="partnership-type">제휴 유형</label>
+                        <select id="partnership-type" name="partnership_type" required>
+                            <option value="" selected disabled>선택해주세요</option>
+                            <option value="marketing">마케팅/프로모션</option>
+                            <option value="content">콘텐츠/미디어</option>
+                            <option value="tech">기술/서비스 연동</option>
+                            <option value="sales">세일즈/제휴 판매</option>
+                            <option value="other">기타</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="message">문의 내용</label>
+                        <textarea id="message" name="message" rows="4" placeholder="제휴 내용을 간단히 알려주세요" required></textarea>
+                    </div>
+                    <div class="form-row consent-row">
+                        <label class="checkbox-label">
+                            <input id="consent" name="consent" type="checkbox" required>
+                            개인정보 수집 및 이용에 동의합니다.
+                        </label>
+                    </div>
+                    <div class="form-row honeypot-row" aria-hidden="true">
+                        <label for="website">웹사이트</label>
+                        <input id="website" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+                    </div>
+                    <input type="hidden" name="_subject" value="제휴 문의 접수">
+                    <input type="hidden" name="_redirect" value="https://product-builder-test1-ejz.pages.dev/#thanks">
+                    <button type="submit" class="partner-submit">제휴 문의 보내기</button>
+                </form>
+                <div id="thanks" class="form-success" role="status" aria-live="polite">
+                    제출이 완료되었습니다. 빠르게 연락드리겠습니다.
+                </div>
+            </section>
         </main>
     </div>
 
