@@ -49,6 +49,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     generateBtn.addEventListener('click', generateLottoNumbers);
 
+    const refreshDisqusTheme = () => {
+        const disqusThread = document.getElementById('disqus_thread');
+        if (!disqusThread) return;
+
+        disqusThread.style.color = getComputedStyle(document.body).color;
+
+        if (window.DISQUS && typeof window.DISQUS.reset === 'function') {
+            window.DISQUS.reset({
+                reload: true,
+                config: function () {
+                    this.page.url = 'https://product-builder-test1-ejz.pages.dev/';
+                    this.page.identifier = 'home';
+                    this.page.title = '프리미엄 로또 번호 생성기';
+                }
+            });
+        }
+    };
+
     const applyTheme = (theme) => {
         document.body.setAttribute('data-theme', theme);
         themeToggle.textContent = theme === 'light' ? 'Dark Mode' : 'Light Mode';
@@ -56,6 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'aria-label',
             theme === 'light' ? '다크 모드로 전환' : '라이트 모드로 전환'
         );
+        refreshDisqusTheme();
     };
 
     const getPreferredTheme = () => {

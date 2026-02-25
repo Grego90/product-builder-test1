@@ -259,6 +259,14 @@ header h1 {
     min-height: 320px;
 }
 
+body[data-theme="light"] .comments-section #disqus_thread {
+    color: #1B1410;
+}
+
+body[data-theme="dark"] .comments-section #disqus_thread {
+    color: #F2F0EB;
+}
+
 .partner-section h2 {
     margin: 0 0 8px;
     font-size: 1.4rem;
