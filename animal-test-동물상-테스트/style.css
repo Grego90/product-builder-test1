@@ -5,9 +5,9 @@
     --panel: #ffffff;
     --accent: #ff7b4a;
     --accent-soft: rgba(255, 123, 74, 0.18);
-    --text: #2b2621;
-    --muted: #6e6257;
-    --border: rgba(43, 38, 33, 0.12);
+    --text: #231a14;
+    --muted: #4f443a;
+    --border: rgba(35, 26, 20, 0.18);
 }
 
 * {

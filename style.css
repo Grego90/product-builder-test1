@@ -4,10 +4,10 @@
 :root {
     --background-color: #1A1A1A;
     --card-color: #2C2C2C;
-    --primary-glow-color: #00FFC2;
-    --primary-glow-shadow: rgba(0, 255, 194, 0.4);
-    --text-color: #E0E0E0;
-    --light-text-color: #B0B0B0;
+    --primary-glow-color: #FFC857;
+    --primary-glow-shadow: rgba(255, 200, 87, 0.35);
+    --text-color: #F2F0EB;
+    --light-text-color: #CFC8BE;
     --border-color: rgba(255, 255, 255, 0.1);
     --ball-text-color: #1A1A1A;
     --pattern-color: #9C92AC;
@@ -17,11 +17,11 @@
 body[data-theme="light"] {
     --background-color: #F6F2EA;
     --card-color: #FFFFFF;
-    --primary-glow-color: #FF7A00;
-    --primary-glow-shadow: rgba(255, 122, 0, 0.35);
-    --text-color: #1F1B16;
-    --light-text-color: #6B5F54;
-    --border-color: rgba(31, 27, 22, 0.12);
+    --primary-glow-color: #C25600;
+    --primary-glow-shadow: rgba(194, 86, 0, 0.3);
+    --text-color: #1B1410;
+    --light-text-color: #4B3F36;
+    --border-color: rgba(27, 20, 16, 0.16);
     --ball-text-color: #1F1B16;
     --pattern-color: #BFAE9A;
     --pattern-opacity: 0.08;
